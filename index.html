@@ -321,7 +321,7 @@
             if (downloadType === "copy-svg") {
               event.preventDefault();
               var url =
-                `dist/images/icons/` +
+                `https://johfa800.github.io/uicons/dist/images/icons/` +
                 item.icon_path +
                 `.svg`;
               fetch(url).then(function (response) {
@@ -337,7 +337,7 @@
             if (downloadType === "copy-cdn") {
               event.preventDefault();
               var url =
-                `dist/images/icons/` +
+                `https://johfa800.github.io/uicons/dist/images/icons/` +
                 item.icon_path +
                 `.svg`;
               navigator.clipboard.writeText(url);
