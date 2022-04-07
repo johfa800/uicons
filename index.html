@@ -10,9 +10,9 @@
     <meta name="title" content="System UIcons" />
 
     <script src="https://www.johfa800.github.io/uicons/dist/js/alpine.min.js" defer></script>
-    <link rel="icon" type="image/svg+xml" href="https://www.johfa800.github.io/uicons/dist/images/favicons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="dist/images/favicons/favicon.svg" />
     <!-- Primary Meta Tags -->
-  <link href="https://www.johfa800.github.io/uicons/dist/styles.css" rel="stylesheet"></head>
+  <link href="dist/styles.css" rel="stylesheet"></head>
   <body
     class="flex flex-col min-h-screen font-mono leading-normal tracking-normal bg-white"
     x-data="loadIcons()"
@@ -195,7 +195,7 @@
           </label>
         </div>
         <a
-          href="https://www.johfa800.github.io/uicons/dist/images/system-uicons.zip"
+          href="dist/images/system-uicons.zip"
           class="flex flex-row items-center w-full p-3 ml-auto text-sm text-white bg-black rounded lg:text-base hover:bg-gray-900 md:w-auto"
           download
         >
@@ -233,7 +233,7 @@
         <template x-for="(item, index) in filteredIcons" :key="index">
           <a
             href=""
-            x-bind:href="`https://www.johfa800.github.io/uicons/dist/images/icons/` +
+            x-bind:href="`dist/images/icons/` +
             item.icon_path +
             `.svg`"
             x-bind:download="downloadType === 'download-svg' && item.icon_name"
